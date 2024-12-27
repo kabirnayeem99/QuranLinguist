@@ -22,8 +22,6 @@ def fetch_verbs_from_multiple_pages(fetch_html_func: Callable[[str], str], url_t
             break  
 
         all_verbs.extend(verb_data)  
-        print(f"Page {page_number} scraped...")  
-        
         page_number += 1  
 
     return all_verbs
